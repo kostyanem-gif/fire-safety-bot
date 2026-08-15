@@ -11,7 +11,7 @@ from typing import List, Tuple
 
 
 class RAGEngine:
-    def __init__(self, documents_dir: str = "documents"):
+    def __init__(self, documents_dir: str = "."):
         self.documents_dir = documents_dir
         self.chunks: List[str] = []
         self.vectorizer = TfidfVectorizer(
